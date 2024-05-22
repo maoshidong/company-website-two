@@ -1,0 +1,74 @@
+@import '../../styles/variables';
+
+.Post {
+	.PostSection {
+		height: 50vh;
+		background-size: cover;
+		background-position: center;
+		// background-attachment: fixed;
+	}
+	.postContent {
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		@media(max-width: 48rem) {
+			max-width: 75%;
+		}
+		@media(max-width: 36rem) {
+			max-width: 90%;
+		}
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: bold;
+		color: $gray-dark;
+	}
+	h2 {
+		font-size: 2rem;
+		font-weight: lighter;
+		color: $gray;
+	}
+	h3 {
+		font-size: 1rem;
+		font-weight: bold;
+		color: $primary;
+	}
+	img {
+		border-radius: 10px;
+		// border: 2px $graylight solid;
+		margin-bottom: 2rem;
+		box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+	}
+	p {
+		font-size: 1rem;
+		color: $gray;
+		line-height: 2.25;
+		margin-bottom: 2rem;
+		word-break: break-word;
+	}
+	ul {
+		margin-bottom: 2rem;
+	}
+	li {
+		font-size: 1rem;
+		color: $gray;
+		line-height: 2.25;
+	}
+	a {
+		font-weight: bold;
+		color: $gray-dark;
+		&:hover {
+			color: $primary;
+		}
+	}
+	pre {
+		display: block;
+		font-size: 87.5%;
+		color: $primary;
+		background: $gray-dark;
+		padding: 2rem;
+		code {
+			word-wrap: normal;
+		}
+	}
+}

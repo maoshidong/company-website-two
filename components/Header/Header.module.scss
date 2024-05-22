@@ -1,0 +1,116 @@
+@import '../../styles/variables';
+.Header {
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10;
+	.container {
+		width: 12000px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+
+		justify-content: space-between;
+	}
+	ul {
+		justify-content: flex-end;
+		display: flex;
+		list-style: none;
+		margin-bottom: 0;
+		li {
+			margin-left: 2rem;
+			color: $white;
+			a {
+				color: white;
+				.dropdown {
+					display: none;
+					transition: 0.3;
+				}
+				&:hover {
+					text-decoration: underline;
+					text-decoration-color: $primary;
+					text-decoration-thickness: 3px;
+					text-underline-offset: 0.25rem;
+					.dropdown {
+						display: block;
+						position: absolute;
+						padding: 16px;
+						background: rgba(0, 0, 0, 0.7);
+						backdrop-filter: blur(1.5rem);
+						border-top: solid 3px $primary;
+						li {
+							margin: 0;
+							padding: 8px 0;
+							a {
+								color: $primary !important;
+								transition: 0.3s;
+								&:hover {
+									color: white !important;
+								}
+							}
+						}
+					}
+				}
+				&.active {
+					text-decoration: underline;
+					text-decoration-color: $primary;
+					text-decoration-thickness: 3px;
+					text-underline-offset: 0.25rem;
+				}
+				&.headerButton {
+					&:hover {
+						text-decoration: none !important;
+					}
+				}
+			}
+		}
+	}
+}
+.SideNav {
+	height: 100%;
+	position: absolute;
+	background: $gray-dark;
+	width: 75%;
+	z-index: 999;
+	visibility: hidden;
+	transform: translateX(-100%);
+	padding: 16px 32px;
+	overflow: scroll;
+	&.isActive {
+		visibility: visible;
+		transform: translateX(0%);
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			padding: 8px 0;
+			font-size: 18px;
+			a {
+				text-decoration: none;
+				color: $white !important;
+				&:hover {
+					text-decoration: none;
+				}
+				ul {
+					padding-left: 32px;
+					li {
+						padding: 16px 0 0;
+						a {
+							font-weight: normal !important;
+							font-size: 16px;
+							color: $primary !important;
+						}
+					}
+				}
+			}
+			button {
+				border: none;
+				display: block;
+				width: 100%;
+				font-weight: bold;
+				margin-top: 1rem;;
+			}
+		}
+	}
+}

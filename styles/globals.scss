@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+
+@import './_variables';
+html {
+	font-size: 14px;
+}
+* {
+	font-family: 'Heebo', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: 700 !important;
+	color: #000; // $gray-dark
+}
+p {
+	color: $gray;
+	line-height: 1.75;
+}
+.nmt-1 {
+	margin-top: -1rem;
+	@media (max-width: 48rem) {
+		margin-top: 0;
+	}
+}
+.nmt-2 {
+	margin-top: -2rem;
+}
+.nmt-3 {
+	margin-top: -3rem;
+}
+.nmt-4 {
+	margin-top: -4rem;
+}
+.fs-8xl {
+	font-size: 9rem !important;
+	line-height: 0.75;
+	margin-bottom: 60px;
+	@media (max-width: 48rem) {
+		font-size: 4rem !important;
+		line-height: 1;
+		margin-bottom: 1rem;
+	}
+}
+.fs-7xl {
+	font-size: 8rem !important;
+	line-height: 1;
+	@media (max-width: 48rem) {
+		font-size: 4.5rem !important;
+	}
+}
+.fs-6xl {
+	font-size: 7rem !important;
+	line-height: 1;
+	@media (max-width: 48rem) {
+		font-size: 4rem !important;
+	}
+}
+.fs-5xl {
+	font-size: 6rem !important;
+	line-height: 1;
+	@media (max-width: 48rem) {
+		font-size: 3.5rem !important;
+	}
+}
+.fs-4xl {
+	font-size: 5rem !important;
+	line-height: 1;
+	@media (max-width: 48rem) {
+		font-size: 3rem !important;
+	}
+}
+.fs-3xl {
+	font-size: 4rem !important;
+	line-height: 1;
+	@media (max-width: 48rem) {
+		font-size: 2.5rem !important;
+	}
+}
+.fs-2xl {
+	font-size: 3.5rem !important;
+	line-height: 1.125;
+	@media (max-width: 48rem) {
+		font-size: 2rem !important;
+	}
+}
+.fs-xl {
+	font-size: 3rem !important;
+	line-height: 1.125;
+	@media (max-width: 48rem) {
+		font-size: 1.75rem !important;
+	}
+}
+.fs-lg {
+	font-size: 2rem !important;
+	line-height: 1.25;
+	@media (max-width: 48rem) {
+		font-size: 1.5rem !important;
+	}
+}
+.fs-md {
+	font-size: 2rem !important;
+	line-height: 1.25;
+	@media (max-width: 48rem) {
+		font-size: 1.25rem !important;
+	}
+}
+.fs-sm {
+	font-size: 1.5rem !important;
+	line-height: 1.5;
+	@media (max-width: 48rem) {
+		font-size: 1rem !important;
+	}
+}
+.fs-xs {
+	font-size: 1rem !important;
+	line-height: 1.5;
+	@media (max-width: 48rem) {
+		font-size: 1rem !important;
+	}
+}
+
+.fw-light {
+	font-weight: lighter !important;
+}
+.mw-sm {
+	max-width: 24rem;
+	margin: 0 auto;
+}
+.mw-md {
+	max-width: 36rem;
+	margin: 0 auto;
+}
+.mw-lg {
+	max-width: 48rem;
+	margin: 0 auto;
+}
+.justify-self-center {
+	justify-self: center;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.bg-cover {
+	background-size: cover;
+}
+a {
+	font-weight: bold;
+	&.link {
+		color: $gray-dark;
+		text-decoration: underline !important;
+		text-decoration-color: $primary !important;
+		text-decoration-thickness: 3px !important;
+		text-underline-offset: 0.25rem !important;
+	}
+}
+hr.primary.small-width {
+	height: 3px;
+	width: 80px;
+	margin: 2rem auto;
+	background: $primary;
+	border: none;
+}
+img {
+	max-width: 100%;
+}
+@import '~bootstrap/scss/bootstrap';
+
+// banner
+.bottom-curve {
+	position: absolute;
+    bottom: -5px;
+	left: 0;
+	top: 0;
+    width: 100%;
+	height: 620px;
+    z-index: 1;
+}
+// 背景图
+.service-section {
+    background: url('/new/service-bg.jpg');
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pub-color-white {
+	color: $gray-white !important;
+}
+.pub-color-gray {
+	color: $gray !important;
+}
+.pub-font22 {
+	font-size: 22px;
+}
+.home-man-tit {
+    font-size: 22px;
+	color: #000;
+	text-align: center;
+}
+.h600 {
+	height: 620px !important;
+}
+// 关于我们
+.about-section {
+	margin-top: 50px;
+	.title {
+		color: #000;
+		font-size: 22px;
+		font-weight: 600;
+	}
+}
+
+.widget-title {
+	font-size: 22px;
+    margin-bottom: 25px;
+}
