@@ -14,6 +14,11 @@ const SubHero = dynamic(() => import('../components/SubHero'));
 const Page = dynamic(() => import('../templates/Page'));
 const DominanceContact = dynamic(() => import('../components/DominanceContact'));
 const Card = dynamic(() => import('../components/Card'));
+import AboutUsCom from '../components/MyCom/AboutUsCom';
+import NewCom from '../components/MyCom/NewCom';
+import ProductCom from '../components/MyCom/ProductCom';
+import BrandCom from '../components/MyCom/BrandCom';
+import SolutionCom from '../components/MyCom/SolutionCom';
 
 // import Section from '../components/Section';
 // import SubHero from '../components/SubHero';
@@ -26,15 +31,20 @@ import styles from '../styles/Home.module.scss';
 const Home = () => {
 	return (
 		<Page className={styles.Home}>
-			
+			 {/* bg-gray-dark */}
 			<Section
-				className={`${styles.homeHero} bg-gray-dark text-center align-items-center`}
+				className={`${styles.homeHero} text-center align-items-center`}
 				hero
-				bgImg="/new/header-bg.jpg"
+				bgImg="/two/bg.png"
+				// bgImg="/new/header-bg.jpg"
 				// bgImg="/bgs/designsystem_bg@2x.png"
+				style={{height: '750px', backgroundImage: `url('/two/bg.png')`}}
 			>
-				<div style={{height: '50px'}}></div>
-				<div style={{display: 'flex', alignItems: 'center', marginTop: '30px'}}>
+				{/* <div style={{height: '50px'}}></div> */}
+				<div style={{position: 'relative', display: 'flex', alignItems: 'center', marginTop: '-100px', paddingTop: '10px'}}>
+					<img
+						className="slider-dotted position-absolute" src="/two/banner-dotted.png"
+						alt="" style={{left: '-116px', top: '0px'}} />
 					<div>
 						<h1 className="font-weight-bold mb-20"  style={{width: '500px',fontSize: '55px', textAlign: 'left', lineHeight: '60px'}}>
 						QUALITY SUPPLY CHAIN FOR ELECTRONIC COMPONENTS
@@ -45,118 +55,23 @@ const Home = () => {
 						</div>
 						<div style={{width: '500px', textAlign: 'left', color: '#000', fontSize: '14px !important', }}>Immediate delivery available.</div>
 					</div>
-					<img src="/new/header-right-img.png" style={{width: '500px', marginLeft: '100px'}} />
+					<div
+						className="slider-img1 wow fadeInRight" data-wow-duration="1.5s"
+						style={{visibility: 'visible', animationDuration: '1.5s', animationName: 'fadeInRight'}}>
+							<img className="bounce-animate" src="/two/slider-img.png" alt="" />
+						</div>
+					{/* <img src="/two/slider-img.png" style={{width: '500px', marginLeft: '100px'}} /> */}
 				</div>
-				{/* <h1 className="fs-xl font-weight-bold text-white-50">
-					We unlock brand
-					<br />
-					<span className="text-white fs-8xl d-block">
-						dominance<span className="text-primary">.</span>
-					</span>
-				</h1>
-				<p className="fs-md font-weight-bold text-white-50 mb-20 nmt-4">
-					branding. web development.{' '}
-					<span className="text-primary">app development.</span>
-				</p> */}
-				{/* <Link href="/get-started">
-					<Button variant="primary" className="inline-block">
-						get started
-					</Button>
-				</Link> */}
-			</Section>
-			{/* tagline="Yong Rong International Limited" */}
-			<div className='service-section' style={{paddingTop: '80px'}}>
-			<SubHero>
-				<h1>Yong Rong International Limited</h1>
-			<div style={{display: 'flex', alignItems: 'center', marginTop: '30px'}}>
-				<img src="/new/about-left-img.png" style={{width: '500px'}} />
-					<div className='about-section' style={{marginLeft: '50px'}}>
-						<p className="title">About Us</p>
-						<p>
-							Established In Taiwan Since 201 6, We Have Good Channel And Relationships With The Franchise, All The Parts We Sell Are Brand New And Original. Parts With Mfr Label, The Quality Is Guaranteed. We Are Looking Forward To Establishing Long-Term Business.
-						</p>
-			{/* <p>
-              Since our establishment, the company has been adhering to the tenet of "integrity, professionalism and cooperation". Under the belief of quality first, ZSM not only guarantees the quality of all supplies but also price advantages. We provide technical support and fast and flexible delivery according to customer needs. In addition, the company is committed to cultivating professional and experienced sales team to support customers with high-quality services.
-            </p>
-			<p>Over the years, ZSM has established long-term relationship with many clients and a good reputation in the industry. We sincerely thank all suppliers and customers for their supports. We hope to continue working together to create a better tomorrow.</p> */}
-					</div>
-					
-				</div>
-			</SubHero>
-			</div>
 
-			<SubHero>
-				<h1 style={{paddingTop: '50px'}}>Our Advantage Brand</h1>
-				<div style={{display: 'flex', alignItems: 'center', marginTop: '30px'}}>
-					<Col md={4} options={{ max: 15, scale: 1.05 }}>
-						<Card>
-							{/* <h3 className="fs-sm font-weight-bold pub-color-gray mb-20">
-								Branding
-							</h3> */}
-							<img
-								src="/new/brand-logo1.png"
-							/>
-							<h4 className='home-man-tit'>TI</h4>
-							<p>
-								We design, manufacture, test and sell analog and embedded semiconductors in markets that include industrial, automotive, personal electronics, communications equipment and enterprise systems.
-							</p>
-							{/* <ul className={styles.cardList}>
-								<li>Audit</li>
-								<li>Research</li>
-								<li>Brand Strategy</li>
-								<li>Messaging</li>
-							</ul>
-							<Link href="/services/branding">
-								<a className="link">Learn More</a>
-							</Link> */}
-						</Card>
-					</Col>
-					{/* as={Tilt} */}
-					<Col md={4} options={{ max: 15, scale: 1.05 }}>
-						<Card>
-							{/* <h3 className="fs-sm font-weight-bold pub-color-gray mb-20">
-								Website Development
-							</h3> */}
-							<img
-								src="/new/brand-logo2.png"
-							/>
-							<div className="service-details">
-								<h4 className='home-man-tit'>ADI</h4>
-								<p>
-								We currently produce a wide range of innovative products—including data converters, amplifiers and linear products, radio frequency (RF) ICs, power management products, sensors based on
-								</p>
-								{/* <a href="/index.php?case=archive&amp;act=list&amp;catid=7">Learn More</a> */}
-							</div>
-							{/* <ul className={styles.cardList}>
-								<li>Responsive Design</li>
-								<li>Search Engine Optimization</li>
-								<li>Dynamic Content</li>
-							</ul>
-							<Link href="/services/website-development">
-								<a className="link">Learn More</a>
-							</Link> */}
-						</Card>
-					</Col>
-					<Col md={4} options={{ max: 15, scale: 1.05 }}>
-						<Card>
-							{/* <h3 className="fs-sm font-weight-bold pub-color-gray mb-20">
-								Software Development
-							</h3> */}
-							<img
-								src="/new/brand-logo3.png"
-							/>
-							<div className="service-details">
-								<h4 className='home-man-tit'>ST</h4>
-								<p>
-								We create and deliver our technology as microchips (or just “chips”), that form a mostly invisible part of the world we live in today. Chips from ST embedding the most advanced innovations are an essential part
-								</p>
-			
-							</div>
-						</Card>
-					</Col>
-				</div>
-				
-			</SubHero>
+			</Section>
+
+			<AboutUsCom />
+			<ProductCom />
+			<BrandCom />
+			<SolutionCom />
+			<NewCom />
+
+
 			{/* <SubHero tagline="We have systems in place to birth excellence.">
 				<Col sm options={{ max: 15, scale: 1.05 }}>
 					<Card>

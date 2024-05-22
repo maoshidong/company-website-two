@@ -12,7 +12,9 @@ const Header = ({ props }) => {
 	const siteLinks = [
 		{ label: 'Home', path: '/' },
 		{ label: 'Main Brand', path: '/mainBrand' },
-		{ label: 'Hot Product', path: '/product' },
+		{ label: 'Product Center', path: '/product' },
+		{ label: 'Solution', path: '/solution' },
+		{ label: 'News', path: '/news' },
 		{ label: 'About Us', path: '/aboutUs' },
 		{ label: 'Contact Us', path: '/contactUs' },
 		// {
@@ -89,7 +91,7 @@ const Header = ({ props }) => {
 	return (
 		<>
 			<header
-				className={`${styles.Header} position-absolute p-10 px-30 d-flex`}
+				className={`${styles.Header} position-fixed p-10 px-30 d-flex`}
 				
 			>
 				<div className={styles.container} style={{maxWidth: '1200px', margin: '0 auto'}}>
@@ -97,12 +99,11 @@ const Header = ({ props }) => {
 						<a>
 						{/* src="/logo_primary.svg" */}
 							<img
-								src="/logo.jpg"
+								src="/logo.png"
 								// width={300}
 								// height={76}
 								// layout="intrinsic"
 								alt="The Kirk Concept, We unlock brand dominance through branding, website development, and software development."
-
 								style={{ width: '200px', height: 'auto', borderRadius: '4px', marginRight: '150px' }}
 							/>
 						</a>
@@ -226,6 +227,7 @@ const Header = ({ props }) => {
 					</li>
 				</ul>
 			</aside>
+			<div style={{height: '75px'}}></div>
 		</>
 	);
 };

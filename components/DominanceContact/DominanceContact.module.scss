@@ -1,0 +1,19 @@
+.footerInfo {
+    h6 {
+        font-size: 22px;
+    }
+    a {
+        color: #666666 !important;
+        font-weight: 500 !important;
+        &:hover {
+            text-decoration: auto;
+        }
+    }
+    .lab {
+
+        color: #666666 !important;
+    }
+    .addIcon::before {
+        content: \f3c5;
+    }
+}

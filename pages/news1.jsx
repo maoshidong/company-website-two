@@ -1,24 +1,23 @@
 
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 // import Card from '../components/Card';
 import { Row, Col } from 'react-bootstrap';
 // import Head from 'next/head';
 import Section from '../components/Section';
 import Page from '../templates/Page';
-const Card = dynamic(() => import('../components/Card'));
-// import SubHero from '../components/SubHero';
+import Card from '../components/Card';
+import SubHero from '../components/SubHero';
 import styles from '../styles/Testimonials.module.scss';
 import DominanceContact from '../components/DominanceContact/DominanceContact';
-import BrandCom from '../components/MyCom/BrandCom';
+import NewCom from '../components/MyCom/NewCom';
 
 const MainBrand = ({ props }) => {
     const getItem = (imgSrc, des) => {
         return <Col md={4} options={{ max: 15, scale: 1.05 }} style={{marginBottom: '30px'}}>
-            <Card>
-				<h5 class="f-700 text-center pt-30">Infineon</h5>
-                <img src={imgSrc} style={{margin: '0 auto'}} />
+            {/* <Card> */}
+                <img src={imgSrc} />
                 <div>{des}</div>
-            </Card>
+            {/* </Card> */}
         </Col>
     }
 	return (
@@ -29,17 +28,15 @@ const MainBrand = ({ props }) => {
 			<Section
 				className={`${styles.contact} bg-gray-dark text-center align-items-center`}
 				hero
-				bgImg="/two/brand.jpg"
+				bgImg="/two/news.jpg"
+				style={{height: '550px', backgroundImage: `url('/two/news.jpg')`}}
 			>
-
+	
 			</Section>
-			{/* <SubHero tagline="real reviews from real brands."> */}
-			<BrandCom />
-            {/* <Row as="main" className={[styles.Testimonials, styles.ProductTable]}>
-                {getItem('new/brand-logo1.png', 'We design, manufacture, test and sell analog and embedded semiconductors in markets that include industrial, automotive, personal electronics, communications equipment and enterprise systems.')}
-                {getItem('new/brand-logo2.png', 'We currently produce a wide range of innovative products—including data converters, amplifiers and linear products, radio frequency (RF) ICs, power management products, sensors based on')}
-                {getItem('new/brand-logo3.png', 'We create and deliver our technology as microchips (or just “chips”), that form a mostly invisible part of the world we live in today. Chips from ST embedding the most advanced innovations are an essential part')}
-            </Row> */}
+			<SubHero >
+				<NewCom />
+
+			</SubHero>
 				{/* <Row as="main" className={`${styles.Testimonials}`}>
 					{testimonials.map((review, index) => {
 						return (
@@ -60,7 +57,7 @@ const MainBrand = ({ props }) => {
 						);
 					})}
 				</Row> */}
-			{/* </SubHero> */}
+			
 			<DominanceContact />
 		</Page>
 	);

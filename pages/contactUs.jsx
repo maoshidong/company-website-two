@@ -27,43 +27,30 @@ const MainBrand = ({ props }) => {
 			<Section
 				className={`${styles.contact} bg-gray-dark text-center align-items-center`}
 				hero
-				bgImg="/new/cont.jpg"
+				bgImg="/two/cont.jpg"
 			>
-                <img class="bottom-curve" src="/new/page-header-bg-curve.png" alt=""></img>
-				<h1 className="fs-3xl font-weight-bold" style={{color: '#000'}}>
+                {/* <img className="bottom-curve" src="/new/page-header-bg-curve.png" alt=""></img> */}
+				{/* <h1 className="fs-3xl font-weight-bold" style={{color: '#000'}}>
                 Conatct Us
 				</h1>
                 <ul style={{display: 'flex', justifyContent: 'center', fontSize: '20px'}}>
                     <li><a href="/">Home - </a></li>
                     <li className="active">&nbsp;Conatct Us</li>
-                </ul>
-
-				{/* <p className="fs-md font-weight-bold text-gray-dark mb-20 nmt-2">
-					Check out what our clients are saying about working with us.
-				</p> */}
+                </ul> */}
 			</Section>
-            <Row as="main" className={[styles.Testimonials, styles.ProductTable]} style={{marginTop: '80px'}}>
-                <Col md={4} options={{ max: 15, scale: 1.05 }} style={{marginBottom: '30px',}}>
-                    <Card>
-                        <h4>Working Hours</h4>
-                        <div>(Mon to Fri): 9.00 AM to 06.00 PM</div>
-                        <div style={{opacity: '0'}}>(Mon to Fri): 9.00 AM to 06.00 PM</div>
-                    </Card>
-                </Col>
-                <Col md={4} options={{ max: 15, scale: 1.05 }} style={{marginBottom: '30px'}}>
-                    <Card>
-                        <h4>Office Address</h4>
-                        <div>2F.-1, No. 9, Jiuhe 2nd St.,  Zhongli Dist. Taoyuan City, 320 Taiwan</div>
-
-                    </Card>
-                </Col>
-                <Col md={4} options={{ max: 15, scale: 1.05 }} style={{marginBottom: '30px', height: '150px'}}>
-                    <Card>
-                        <h4>Contact Details</h4>
-                        <div>Tel: 00886-9-58719211</div>
-                        <div>Email: sales@yongrongtw.com</div>
-                    </Card>
-                </Col>
+            <Row as="main" className={[styles.Testimonials, styles.ProductTable, 'justify-content-center']} style={{marginTop: '80px'}}>
+                <div class="connected-info mb-50">
+                    <div class="title">
+                        <h3 class="f-700 mb-40">ALPHATEC ENTERPRISE CORP LIMITED</h3>
+                        <p class="mb-0">To provide customers with fast and efficient pragmatic service and perfect after-sales technical support</p>
+                    </div>
+                    <div class="connected-info-text mt-30">
+                        <p class="mb-10"><span class="d-inline-block black-color f-700 pr-15">Add</span>5F, No.52-1, Guandu Road Pei-Tou District, Taipei, Taiwan</p>
+                        <p class="mb-10"><span class="d-inline-block black-color f-700 pr-15">Tel</span>886-2-22941608</p>
+                        <p class="mb-10"><span class="d-inline-block black-color f-700 pr-15">Email</span>sales@twalpha.com</p>
+                        
+                    </div>
+                </div>
             </Row>
 			<DominanceContact />
 		</Page>

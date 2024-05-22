@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 // import Header from '../../components/Header';
 // import Footer from '../../components/Footer';
 const Header = dynamic(() => import('../../components/Header'));
-const Footer = dynamic(() => import('../../components/Footer'));
+// const DominanceContact = dynamic(() => import('../../components/DominanceContact'));
 import { dateTime } from '../../utilities/helpers';
 
 const Page = ({
@@ -24,7 +24,8 @@ const Page = ({
 	return (
 		<>
 			<Head>
-				<title>Yong Rong International Limited</title>
+				{/* 公司名称 */}
+				<title>ALPHATEC ENTERPRISE CORP LIMITED</title>
 				<meta content={description} name="description" />
 				<meta charSet="utf-8" />
 				<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
@@ -98,7 +99,7 @@ const Page = ({
 			<div className={`Page ${className}`}>
 				<Header />
 				<main className="content">{children}</main>
-				<Footer />
+				{/* <DominanceContact /> */}
 			</div>
 		</>
 	);
