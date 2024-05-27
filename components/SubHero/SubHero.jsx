@@ -2,13 +2,14 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Section from '../Section';
 
-const SubHero = ({ tagline, children, className }) => {
+const SubHero = ({ tagline, children, className, ...rest }) => {
 	return (
 		<>
 			{
 				tagline && <Section
 					size="none"
 					className={`SubHero bg-primary text-gray-dark pub-color-white py-30 ${className}`}
+					{...rest}
 				>
 					<h2 className="fs-lg font-weight-bold text-center pub-color-white mb-30">
 						{tagline}

@@ -46,7 +46,7 @@ const newsData = {
     },
 }
 
-const MainBrand = ({ props }) => {
+const NewsPage = ({ props }) => {
     const Router = useRouter();
     const { query } = Router
 
@@ -97,4 +97,4 @@ const MainBrand = ({ props }) => {
 	);
 };
 
-export default MainBrand;
+export default NewsPage;

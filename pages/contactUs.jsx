@@ -39,15 +39,15 @@ const MainBrand = ({ props }) => {
                 </ul> */}
 			</Section>
             <Row as="main" className={[styles.Testimonials, styles.ProductTable, 'justify-content-center']} style={{marginTop: '80px'}}>
-                <div class="connected-info mb-50">
-                    <div class="title">
-                        <h3 class="f-700 mb-40">ALPHATEC ENTERPRISE CORP LIMITED</h3>
-                        <p class="mb-0">To provide customers with fast and efficient pragmatic service and perfect after-sales technical support</p>
+                <div className="connected-info mb-50">
+                    <div className="title">
+                        <h3 className="f-700 mb-40">ALPHATEC ENTERPRISE CORP LIMITED</h3>
+                        <p className="mb-0">To provide customers with fast and efficient pragmatic service and perfect after-sales technical support</p>
                     </div>
-                    <div class="connected-info-text mt-30">
-                        <p class="mb-10"><span class="d-inline-block black-color f-700 pr-15">Add</span>5F, No.52-1, Guandu Road Pei-Tou District, Taipei, Taiwan</p>
-                        <p class="mb-10"><span class="d-inline-block black-color f-700 pr-15">Tel</span>886-2-22941608</p>
-                        <p class="mb-10"><span class="d-inline-block black-color f-700 pr-15">Email</span>sales@twalpha.com</p>
+                    <div className="connected-info-text mt-30">
+                        <p className="mb-10"><span className="d-inline-block black-color f-700 pr-15">Add</span>5F, No.52-1, Guandu Road Pei-Tou District, Taipei, Taiwan</p>
+                        <p className="mb-10"><span className="d-inline-block black-color f-700 pr-15">Tel</span>886-2-22941608</p>
+                        <p className="mb-10"><span className="d-inline-block black-color f-700 pr-15">Email</span>sales@twalpha.com</p>
                         
                     </div>
                 </div>

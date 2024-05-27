@@ -12,7 +12,7 @@ import SubHero from '../SubHero';
 
 const SolutionCom = () => {
     const getItem = (id, imgSrc, des) => {
-        return <Link href={`/news/${id}`}> 
+        return <Link href={`/solution/${id}`}> 
             {/* <a> */}
                 <Col md={4} options={{ max: 15, scale: 1.05 }} style={{marginBottom: '30px'}}>
                 <Card pdClassName='single-blog p-0 pub-cursor-pointer'>

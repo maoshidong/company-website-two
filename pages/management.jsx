@@ -15,7 +15,7 @@ const MainBrand = ({ props }) => {
     const getItem = (imgSrc, des) => {
         return <Col md={4} options={{ max: 15, scale: 1.05 }} style={{marginBottom: '30px'}}>
             <Card>
-				<h5 class="f-700 text-center pt-30">Infineon</h5>
+				<h5 className="f-700 text-center pt-30">Infineon</h5>
                 <img src={imgSrc} style={{margin: '0 auto'}} />
                 <div>{des}</div>
             </Card>

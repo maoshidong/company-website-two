@@ -40,10 +40,15 @@ const ProductCom = () => {
         <Row as="main">
             
             {getItem(1, '/two/prod1.jpg', 'On Mei industrial grade IGBT single tube')}
-            
             {getItem(2, '/two/prod2.jpg', 'On TOLL Package MOSFETs')}
-            
             {getItem(3, '/two/prod3.jpg', 'Infineon Hybrid Single tube CoolSiC')}
+            {getItem(4, '/two/prod4.jpg', 'Infineon Automotive IGBT module')}
+            {getItem(5, '/two/prod5.jpg', 'Infineon Easy series IGBT modules')}
+            {getItem(6, '/two/prod6.jpg', 'Infineon IGBT7 module')}
+            
+            {/* {getItem(4, '/two/prod4.jpg', 'Infineon Automotive IGBT module')}
+            {getItem(5, '/two/prod5.jpg', 'Infineon Easy series IGBT modules')}
+            {getItem(6, '/two/prod6.jpg', 'Infineon Easy series IGBT modules')} */}
 
         </Row>
         </SubHero>

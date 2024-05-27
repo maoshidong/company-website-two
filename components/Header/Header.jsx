@@ -11,7 +11,7 @@ const Header = ({ props }) => {
 
 	const siteLinks = [
 		{ label: 'Home', path: '/' },
-		{ label: 'Main Brand', path: '/mainBrand' },
+		{ label: 'Management', path: '/management' },
 		{ label: 'Product Center', path: '/product' },
 		{ label: 'Solution', path: '/solution' },
 		{ label: 'News', path: '/news' },
